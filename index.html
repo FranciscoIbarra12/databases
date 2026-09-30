@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie shelf</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <script src="vendor/sql-wasm.js" defer></script>
+  <script src="cards.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body class="bg-body-tertiary">
+  <header class="bg-white border-bottom">
+    <div class="container py-3 d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <a class="fs-4 fw-bold text-dark text-decoration-none" href="#all">Movie shelf</a>
+      <nav class="nav nav-pills" aria-label="Movie categories">
+      </nav>
+      <a class="btn btn-outline-secondary" href="database.html">Browse database</a>
+    </div>
+  </header>
+  <main class="container py-5">
+    <h1 id="page-title" class="display-5 fw-bold">All movies</h1>
+    <p id="status" class="text-body-secondary mb-4" role="status" aria-live="polite"></p>
+    <section id="movies" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" aria-label="Movie cards"></section>
+  </main>
+</body>
+
+</html>
